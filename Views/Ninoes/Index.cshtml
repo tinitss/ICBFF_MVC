@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ICBF_3.Models.Nino>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Niup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoSangre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CiudadNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FkIdEpsNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FkIdJardinNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FkIdUsuarioNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Niup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoSangre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CiudadNacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FkIdEpsNavigation.PkIdEps)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FkIdJardinNavigation.PkIdJardin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FkIdUsuarioNavigation.PkIdUsuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.PkIdNino">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.PkIdNino">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.PkIdNino">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

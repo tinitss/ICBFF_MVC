@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ICBF_3.props" />
+</Project>

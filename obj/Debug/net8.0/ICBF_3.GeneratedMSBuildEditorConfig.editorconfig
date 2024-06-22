@@ -1,0 +1,215 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ICBF_3
+build_property.RootNamespace = ICBF_3
+build_property.ProjectDir = C:\Users\Asus\OneDrive - SENA\ESCRITORIO\ICBF_3\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Asus\OneDrive - SENA\ESCRITORIO\ICBF_3
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Asistencias/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Asistencias/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Asistencias/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Asistencias/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Asistencias/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/AvancesAcademicoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbmNlc0FjYWRlbWljb2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/AvancesAcademicoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbmNlc0FjYWRlbWljb2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/AvancesAcademicoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbmNlc0FjYWRlbWljb2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/AvancesAcademicoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbmNlc0FjYWRlbWljb2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/AvancesAcademicoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXZhbmNlc0FjYWRlbWljb2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Eps/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Eps/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Eps/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Eps/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Eps/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXBzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Jardines/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFyZGluZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Jardines/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFyZGluZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Jardines/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFyZGluZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Jardines/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFyZGluZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Jardines/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSmFyZGluZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Ninoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmlub2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Ninoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmlub2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Ninoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmlub2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Ninoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmlub2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Ninoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmlub2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Roles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Roles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/TipoDocs/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/TipoDocs/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/TipoDocs/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/TipoDocs/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/TipoDocs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0RvY3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive - SENA/ESCRITORIO/ICBF_3/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-5vwz20lia1
