@@ -1,65 +1,85 @@
 ﻿@model IEnumerable<ICBF_3.Models.Nino>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Listado de Niños";
 }
 
-<h1>Index</h1>
+<style>
+    .page-title {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #007bff;
+    }
+</style>
+
+<h1 class="page-title">Listado de Niños</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Crear Nuevo</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Niup)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TipoSangre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CiudadNacimiento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FkIdEpsNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FkIdJardinNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FkIdUsuarioNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Niup)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TipoSangre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CiudadNacimiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FkIdEpsNavigation.PkIdEps)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FkIdJardinNavigation.PkIdJardin)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FkIdUsuarioNavigation.PkIdUsuario)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PkIdNino">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PkIdNino">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PkIdNino">Delete</a>
-            </td>
-        </tr>
+
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <th>
+                    NIUP
+                </th>
+                <th>
+                    Tipo de Sangre
+                </th>
+                <th>
+                    Ciudad de Nacimiento
+                </th>
+                <th>
+                    EPS
+                </th>
+                <th>
+                    Jardín Infantil
+                </th>
+                <th>
+                    Usuario Responsable
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Niup)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TipoSangre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CiudadNacimiento)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FkIdEpsNavigation.PkIdEps)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FkIdJardinNavigation.PkIdJardin)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FkIdUsuarioNavigation.PkIdUsuario)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.PkIdNino" class="btn btn-warning">
+                            <i class="fas fa-edit"></i> Editar
+                        </a>
+                        <a asp-action="Delete" asp-route-id="@item.PkIdNino" class="btn btn-danger" onclick="return confirm('¿Está seguro que desea eliminar este niño?')">
+                            <i class="fas fa-trash-alt"></i> Eliminar
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 }
-    </tbody>
-</table>

@@ -4,39 +4,61 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<style>
+    .form-container {
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+    }
 
-<h4>Asistencia</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Fecha" class="control-label"></label>
-                <input asp-for="Fecha" class="form-control" />
-                <span asp-validation-for="Fecha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="DescripcionEstado" class="control-label"></label>
-                <input asp-for="DescripcionEstado" class="form-control" />
-                <span asp-validation-for="DescripcionEstado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="FkIdNino" class="control-label"></label>
-                <select asp-for="FkIdNino" class ="form-control" asp-items="ViewBag.FkIdNino"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
-</div>
+    .page-title {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #007bff;
+    }
 
-<div>
-    <a asp-action="Index">Back to List</a>
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .btn-submit {
+        margin-top: 10px;
+    }
+</style>
+
+<div class="form-container">
+    <h1 class="page-title">Crear Asistencia</h1>
+
+    <form asp-action="Create">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Fecha" class="control-label">Fecha</label>
+            <input asp-for="Fecha" class="form-control" />
+            <span asp-validation-for="Fecha" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DescripcionEstado" class="control-label">Descripción del Estado</label>
+            <input asp-for="DescripcionEstado" class="form-control" />
+            <span asp-validation-for="DescripcionEstado" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="FkIdNino" class="control-label">Niño</label>
+            <select asp-for="FkIdNino" class="form-control" asp-items="ViewBag.FkIdNino"></select>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-submit">Crear</button>
+            <a asp-action="Index" class="btn btn-secondary btn-submit">Volver a la Lista</a>
+        </div>
+    </form>
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

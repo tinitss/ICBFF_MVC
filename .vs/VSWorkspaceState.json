@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
-    "\\Models"
+    "\\Models",
+    "\\Views",
+    "\\Views\\Reportes",
+    "\\Views\\Usuarios"
   ],
-  "SelectedNode": "\\ICBF_3.sln",
+  "SelectedNode": "\\Views\\Usuarios\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

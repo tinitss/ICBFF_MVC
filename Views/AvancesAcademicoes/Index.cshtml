@@ -4,62 +4,84 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<style>
+    .table-container {
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 20px;
+    }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaNota)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descripcion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.AnoEscolar)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nivel)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Notas)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FkIdNinoNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaNota)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AnoEscolar)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nivel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Notas)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FkIdNinoNavigation.PkIdNino)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PkIdAvance">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PkIdAvance">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PkIdAvance">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    .page-title {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #007bff;
+    }
+
+    .btn-submit {
+        margin-top: 10px;
+    }
+</style>
+
+<div class="table-container">
+    <h1 class="page-title">Lista de Avances Académicos</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary btn-submit">Crear Nuevo</a>
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaNota)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descripcion)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AnoEscolar)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nivel)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Notas)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FkIdNinoNavigation)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaNota)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AnoEscolar)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nivel)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Notas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FkIdNinoNavigation.PkIdNino)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.PkIdAvance" class="btn btn-primary">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@item.PkIdAvance" class="btn btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

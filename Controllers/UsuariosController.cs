@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ICBF_3.Models;
+using Rotativa.AspNetCore;
 
 namespace ICBF_3.Controllers
 {
@@ -54,8 +53,6 @@ namespace ICBF_3.Controllers
         }
 
         // POST: Usuarios/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("PkIdUsuario,Identificacion,Nombre,FechaNacimiento,Telefono,Correo,Direccion,FkIdRol,FkIdTipoDoc")] Usuario usuario)
@@ -90,8 +87,6 @@ namespace ICBF_3.Controllers
         }
 
         // POST: Usuarios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("PkIdUsuario,Identificacion,Nombre,FechaNacimiento,Telefono,Correo,Direccion,FkIdRol,FkIdTipoDoc")] Usuario usuario)
@@ -160,6 +155,24 @@ namespace ICBF_3.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        // GET: Usuarios/GenerateReport
+        /*public IActionResult GenerateReport()
+        {
+            var usuarios = _context.Usuarios
+                .Include(u => u.FkIdRolNavigation)
+                .Include(u => u.FkIdTipoDocNavigation)
+                .ToList(); // Obtener todos los usuarios desde la base de datos
+
+            var report = new ViewAsPdf("GenerateReport", usuarios)
+            {
+                FileName = "ReporteUsuarios.pdf",
+                PageSize = Rotativa.AspNetCore.Options.Size.A4,
+                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait
+            };
+
+            return report;
+        }*/
 
         private bool UsuarioExists(int id)
         {

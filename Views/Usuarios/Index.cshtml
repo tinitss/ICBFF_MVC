@@ -1,77 +1,116 @@
 ﻿@model IEnumerable<ICBF_3.Models.Usuario>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Usuarios";
 }
 
-<h1>Index</h1>
+<style>
+    .table-container {
+        max-width: 1800px;
+        margin: auto;
+        margin-top: 20px;
+    }
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Identificacion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaNacimiento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefono)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Correo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Direccion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FkIdRolNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FkIdTipoDocNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Identificacion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaNacimiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Correo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FkIdRolNavigation.PkIdRol)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FkIdTipoDocNavigation.PkIdTipoDoc)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PkIdUsuario">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PkIdUsuario">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PkIdUsuario">Delete</a>
-            </td>
-        </tr>
+    .page-title {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #007bff;
+    }
+
+    .btn-edit {
+        padding: 6px 12px;
+    }
+
+    .btn-delete {
+        padding: 6px 12px;
+    }
+</style>
+
+<div class="table-container">
+    <h1 class="page-title">Lista de Usuarios</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Agregar Usuario</a>
+        <a asp-action="GenerateReport" class="btn btn-primary">Generar Reporte PDF</a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>
+                        Identificación
+                    </th>
+                    <th>
+                        Nombre Completo
+                    </th>
+                    <th>
+                        Fecha de Nacimiento
+                    </th>
+                    <th>
+                        Teléfono
+                    </th>
+                    <th>
+                        Correo Electrónico
+                    </th>
+                    <th>
+                        Dirección
+                    </th>
+                    <th>
+                        Rol
+                    </th>
+                    <th>
+                        Tipo de Documento
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Identificacion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FechaNacimiento)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefono)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Correo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Direccion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FkIdRolNavigation.Tipo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FkIdTipoDocNavigation.Tipo)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.PkIdUsuario" class="btn btn-warning btn-edit">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <form asp-action="Delete" asp-route-id="@item.PkIdUsuario" method="post" style="display: inline;">
+                                <button type="submit" class="btn btn-danger btn-delete" onclick="return confirm('¿Está seguro que desea eliminar este usuario?')">
+                                    <i class="fas fa-trash-alt"></i> 
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
 }
-    </tbody>
-</table>
